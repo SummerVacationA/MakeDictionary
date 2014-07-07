@@ -18,7 +18,7 @@ public class StopWatch
 	public void stop()
 	{
 		long currentTime = System.nanoTime();
-		elapsedTime = ((currentTime - startedTime) / 2);
+		elapsedTime = currentTime - startedTime;
 	}
 
 	public long getElapsedTime()
